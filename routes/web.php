@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
@@ -17,10 +18,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// nomor 1
+Route::get('/', [CompanyController::class, 'index']);
 
-Route::get('/', [HomeController::class, 'index']);
+// nomor 2
+Route::prefix('product')->group(function () {
+    Route::get('/list', [CompanyController::class, 'product']);
+   });
 
-Route::get('/about', [AboutController::class, 'index']);
+// nomor 3
+    Route::get('/news/{id}', [CompanyController::class, 'news']);
 
-Route::get('/articles/{id}', [ArticleController::class, 'index']);
+// nomor 4
+Route::prefix('program')->group(function () {
+    Route::get('/list', [CompanyController::class, 'program']);
+   });
 
+// nomor 5
+   Route::get('/aboutus', [CompanyController::class, 'aboutus']);
+
+// nomor 6
+    Route::resource('index', CompanyController::class);
+   
