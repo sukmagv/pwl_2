@@ -2,9 +2,13 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\ContactController;
+// use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProgramController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,24 +23,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 // nomor 1
-Route::get('/', [CompanyController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 
 // nomor 2
 Route::prefix('product')->group(function () {
-    Route::get('/list', [CompanyController::class, 'product']);
+    Route::get('/list', [ProductController::class, 'product']);
    });
 
 // nomor 3
-    Route::get('/news/{id}', [CompanyController::class, 'news']);
+    Route::get('/news/{id}', [NewsController::class, 'news']);
 
 // nomor 4
 Route::prefix('program')->group(function () {
-    Route::get('/list', [CompanyController::class, 'program']);
+    Route::get('/list', [ProgramController::class, 'program']);
    });
 
 // nomor 5
-   Route::get('/aboutus', [CompanyController::class, 'aboutus']);
+   Route::get('/aboutus', [AboutController::class, 'aboutus']);
 
 // nomor 6
-    Route::resource('index', CompanyController::class);
+    Route::resource('contactus', ContactController::class);
    
