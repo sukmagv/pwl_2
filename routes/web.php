@@ -7,6 +7,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
 // use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KendaraanController;
 use App\Http\Controllers\KuliahController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\PageController;
@@ -52,3 +53,5 @@ Route::get('/', [BerandaController::class, 'index']);
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/profile', [ProfileController::class, 'index']);
 Route::get('/kuliah', [KuliahController::class, 'index']); 
+
+Route::get('/kendaraan', [KendaraanController::class, 'index']);
