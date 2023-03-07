@@ -6,7 +6,7 @@
     <!-- Default box -->
     <div class="card">
       <div class="card-header">
-        <h3 class="card-title">SELAMAT DATANG!!!</h3>
+        <h3 class="card-title">MY FAMILY</h3>
 
         <div class="card-tools">
           <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -18,7 +18,6 @@
         </div>
       </div>
       <div class="card-body">
-        MY FAMILY
         <table class="table">
           <tr>
             <th>no</th>
