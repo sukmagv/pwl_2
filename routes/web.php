@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DashboardController;
@@ -17,6 +18,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgramController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,12 +54,22 @@ use Illuminate\Support\Facades\Route;
 // // nomor 6
 //     Route::resource('contactus', ContactController::class);
 
-Route::get('/', [BerandaController::class, 'index']);
-Route::get('/dashboard', [DashboardController::class, 'index']);
-Route::get('/profile', [ProfileController::class, 'index']);
-Route::get('/kuliah', [KuliahController::class, 'index']); 
 
-Route::get('/kendaraan', [KendaraanController::class, 'index']);
-Route::get('/hobi', [HobiController::class, 'index']);
-Route::get('/keluarga', [KeluargaController::class, 'index']);
-Route::get('/matakuliah', [MataKuliahController::class, 'index']);
+
+Auth::routes();
+Route::get('logout',[LoginController::class, 'logout']);
+Route::middleware(['auth'])->group(function(){
+    Route::get('/', [BerandaController::class, 'index']);
+    Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/profile', [ProfileController::class, 'index']);
+    Route::get('/kuliah', [KuliahController::class, 'index']); 
+
+    Route::get('/kendaraan', [KendaraanController::class, 'index']);
+    Route::get('/hobi', [HobiController::class, 'index']);
+    Route::get('/keluarga', [KeluargaController::class, 'index']);
+    Route::get('/matakuliah', [MataKuliahController::class, 'index']);
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
+
+
+
