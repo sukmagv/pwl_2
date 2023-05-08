@@ -21,4 +21,8 @@ class MahasiswaModel extends Model
         'hp',
         'alamat',
     ];
+
+    public function kelas(){
+        return $this->belongsTo(KelasModel::class);
+    }
 }
