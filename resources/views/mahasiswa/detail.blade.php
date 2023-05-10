@@ -18,16 +18,16 @@
         </div>
       </div>
       <div class="card-body">
-        
+       
         <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>Nim : </b>{{$Mahasiswa->nim}}</li>
-            <li class="list-group-item"><b>Nama : </b>{{$Mahasiswa->nama}}</li>
-            <li class="list-group-item"><b>Kelas : </b>{{$Mahasiswa->kelas->nama_kelas}}</li>
-            <li class="list-group-item"><b>Jenis Kelamin : </b>{{$Mahasiswa->jk}}</li>
-            <li class="list-group-item"><b>Tempat Lahir : </b>{{$Mahasiswa->tempat_lahir}}</li>
-            <li class="list-group-item"><b>Tanggal Lahir : </b>{{$Mahasiswa->tanggal_lahir}}</li>
-            <li class="list-group-item"><b>Alamat : </b>{{$Mahasiswa->alamat}}</li>
-            <li class="list-group-item"><b>HP : </b>{{$Mahasiswa->hp}}</li>
+            <li class="list-group-item"><b>Nim : </b>{{$mahasiswa->nim}}</li>
+            <li class="list-group-item"><b>Nama : </b>{{$mahasiswa->nama}}</li>
+            <li class="list-group-item"><b>Kelas : </b>{{$mahasiswa->kelas->nama_kelas}}</li>
+            <li class="list-group-item"><b>Jenis Kelamin : </b>{{$mahasiswa->jk}}</li>
+            <li class="list-group-item"><b>Tempat Lahir : </b>{{$mahasiswa->tempat_lahir}}</li>
+            <li class="list-group-item"><b>Tanggal Lahir : </b>{{$mahasiswa->tanggal_lahir}}</li>
+            <li class="list-group-item"><b>Alamat : </b>{{$mahasiswa->alamat}}</li>
+            <li class="list-group-item"><b>HP : </b>{{$mahasiswa->hp}}</li>
         </ul>
       </div>
       <!-- /.card-body -->

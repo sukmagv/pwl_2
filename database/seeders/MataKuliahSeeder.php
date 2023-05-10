@@ -15,10 +15,10 @@ class MataKuliahSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('mata_kuliah')->insert([
+        DB::table('matkul')->insert([
             [
                 'kode_mk' => 'RTI211001',
-                'mata_kuliah' => 'Pancasila',
+                'nama' => 'Pancasila',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '2',
@@ -27,7 +27,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211002',
-                'mata_kuliah' => 'Konsep Teknologi Informasi',
+                'nama' => 'Konsep Teknologi Informasi',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '4',
@@ -36,7 +36,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211003',
-                'mata_kuliah' => 'Critical Thinking dan Problem Solving',
+                'nama' => 'Critical Thinking dan Problem Solving',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '4',
@@ -45,7 +45,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211004',
-                'mata_kuliah' => 'Matematika 1',
+                'nama' => 'Matematika 1',
                 'semester' => '1',
                 'sks' => '3',
                 'jam' => '6',
@@ -54,7 +54,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211005',
-                'mata_kuliah' => 'Bahasa Inggris 1',
+                'nama' => 'Bahasa Inggris 1',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '4',
@@ -63,7 +63,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211006',
-                'mata_kuliah' => 'Dasar Pemrograman',
+                'nama' => 'Dasar Pemrograman',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '4',
@@ -72,7 +72,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211007',
-                'mata_kuliah' => 'Praktikum Dasar Pemrograman',
+                'nama' => 'Praktikum Dasar Pemrograman',
                 'semester' => '1',
                 'sks' => '3',
                 'jam' => '6',
@@ -81,7 +81,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI211008',
-                'mata_kuliah' => 'Keselamatan dan Kesehatan Kerja',
+                'nama' => 'Keselamatan dan Kesehatan Kerja',
                 'semester' => '1',
                 'sks' => '2',
                 'jam' => '4',
@@ -90,7 +90,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212001',
-                'mata_kuliah' => 'Agama',
+                'nama' => 'Agama',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '2',
@@ -99,7 +99,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212002',
-                'mata_kuliah' => 'Matematika 2',
+                'nama' => 'Matematika 2',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -108,7 +108,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212003',
-                'mata_kuliah' => 'Bahasa Inggris 2',
+                'nama' => 'Bahasa Inggris 2',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -117,7 +117,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212004',
-                'mata_kuliah' => 'Sistem Operasi',
+                'nama' => 'Sistem Operasi',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -126,7 +126,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212005',
-                'mata_kuliah' => 'Rekayasa Perangkat Lunak',
+                'nama' => 'Rekayasa Perangkat Lunak',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -135,7 +135,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212006',
-                'mata_kuliah' => 'Basis Data',
+                'nama' => 'Basis Data',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -144,7 +144,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212007',
-                'mata_kuliah' => 'Praktikum Basis Data',
+                'nama' => 'Praktikum Basis Data',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -153,7 +153,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212008',
-                'mata_kuliah' => 'Algoritma dan Struktur Data',
+                'nama' => 'Algoritma dan Struktur Data',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -162,7 +162,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212009',
-                'mata_kuliah' => 'Praktikum Algoritma dan Struktur Data',
+                'nama' => 'Praktikum Algoritma dan Struktur Data',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -171,7 +171,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI212010',
-                'mata_kuliah' => 'Ilmu Komunikasi dan Organisasi',
+                'nama' => 'Ilmu Komunikasi dan Organisasi',
                 'semester' => '2',
                 'sks' => '2',
                 'jam' => '4',
@@ -180,7 +180,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213001',
-                'mata_kuliah' => 'Desain Antarmuka',
+                'nama' => 'Desain Antarmuka',
                 'semester' => '3',
                 'sks' => '2',
                 'jam' => '4',
@@ -189,7 +189,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213002',
-                'mata_kuliah' => 'Sistem Manajemen Kualitas',
+                'nama' => 'Sistem Manajemen Kualitas',
                 'semester' => '3',
                 'sks' => '2',
                 'jam' => '4',
@@ -198,7 +198,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213003',
-                'mata_kuliah' => 'Kecerdasan Buatan',
+                'nama' => 'Kecerdasan Buatan',
                 'semester' => '3',
                 'sks' => '2',
                 'jam' => '4',
@@ -207,7 +207,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213004',
-                'mata_kuliah' => 'Desain dan Pemrograman Web',
+                'nama' => 'Desain dan Pemrograman Web',
                 'semester' => '3',
                 'sks' => '3',
                 'jam' => '6',
@@ -216,7 +216,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213005',
-                'mata_kuliah' => 'Basis Data Lanjut',
+                'nama' => 'Basis Data Lanjut',
                 'semester' => '3',
                 'sks' => '3',
                 'jam' => '6',
@@ -225,7 +225,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213006',
-                'mata_kuliah' => 'Matematika 3',
+                'nama' => 'Matematika 3',
                 'semester' => '3',
                 'sks' => '2',
                 'jam' => '4',
@@ -234,7 +234,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213007',
-                'mata_kuliah' => 'Pemrograman Berbasis Objek',
+                'nama' => 'Pemrograman Berbasis Objek',
                 'semester' => '3',
                 'sks' => '2',
                 'jam' => '4',
@@ -243,7 +243,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI213008',
-                'mata_kuliah' => 'Praktikum Pemrograman Berbasis Objek',
+                'nama' => 'Praktikum Pemrograman Berbasis Objek',
                 'semester' => '3',
                 'sks' => '3',
                 'jam' => '6',
@@ -252,7 +252,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214001',
-                'mata_kuliah' => 'Kewarganegaraan',
+                'nama' => 'Kewarganegaraan',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '2',
@@ -261,7 +261,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214002',
-                'mata_kuliah' => 'Analisis dan Desain Berorientasi Objek',
+                'nama' => 'Analisis dan Desain Berorientasi Objek',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '4',
@@ -270,7 +270,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214003',
-                'mata_kuliah' => 'Manajemen Proyek',
+                'nama' => 'Manajemen Proyek',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '3',
@@ -279,7 +279,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214004',
-                'mata_kuliah' => 'Proyek 1',
+                'nama' => 'Proyek 1',
                 'semester' => '4',
                 'sks' => '3',
                 'jam' => '6',
@@ -288,7 +288,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214005',
-                'mata_kuliah' => 'Business Intelligence',
+                'nama' => 'Business Intelligence',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '4',
@@ -297,7 +297,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214006',
-                'mata_kuliah' => 'Jaringan Komputer',
+                'nama' => 'Jaringan Komputer',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '4',
@@ -306,7 +306,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214007',
-                'mata_kuliah' => 'Praktikum Jaringan Komputer',
+                'nama' => 'Praktikum Jaringan Komputer',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '4',
@@ -315,7 +315,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214008',
-                'mata_kuliah' => 'Pemrograman Web Lanjut',
+                'nama' => 'Pemrograman Web Lanjut',
                 'semester' => '4',
                 'sks' => '3',
                 'jam' => '6',
@@ -324,7 +324,7 @@ class MataKuliahSeeder extends Seeder
             ],
             [
                 'kode_mk' => 'RTI214009',
-                'mata_kuliah' => 'Statistik Komputasi',
+                'nama' => 'Statistik Komputasi',
                 'semester' => '4',
                 'sks' => '2',
                 'jam' => '4',

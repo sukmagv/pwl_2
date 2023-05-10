@@ -19,6 +19,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProgramController;
+use App\Models\MhsMatkul;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -72,6 +73,7 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
     Route::resource('/mahasiswa', MahasiswaController::class)->parameter('mahasiswa', 'id');
+    Route::get('/mahasiswa/{id}/khs', [MahasiswaController::class, 'khs']);
 });
 
 

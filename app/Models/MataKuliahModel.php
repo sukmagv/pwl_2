@@ -9,7 +9,9 @@ class MataKuliahModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'mata_kuliah';
-    protected $primaryKey = 'kode_mk';
-    protected $keyType = 'string';
+    protected $table = 'matkul';
+
+    public function mhs_matkul(){
+        return $this->hasMany(MhsMatkul::class);
+    }
 }

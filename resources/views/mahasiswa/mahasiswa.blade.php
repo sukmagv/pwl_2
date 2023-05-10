@@ -52,6 +52,9 @@
                       <a href="{{url('/mahasiswa/'. $m->id)}}"
                         class="btn btn-sm btn-primary">Show</a>
 
+                      <a href="{{url('/mahasiswa/'. $m->id.'/khs/')}}"
+                        class="btn btn-sm btn-primary">KHS</a>
+
                       <a href="{{url('/mahasiswa/'. $m->id.'/edit/')}}"
                       class="btn btn-sm btn-warning">Edit</a>
 
