@@ -6,6 +6,7 @@ use App\Models\Article;
 use App\Models\ArticleModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class ArticleController extends Controller
 {
@@ -106,5 +107,13 @@ class ArticleController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function cetak_pdf()
+    {
+        // return 'kjdhauhdkd';
+        $article = ArticleModel::all();
+        $pdf = PDF::loadview('article.article_pdf', ['article' => $article]);
+        return $pdf->stream();
     }
 }
