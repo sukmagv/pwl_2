@@ -49,6 +49,8 @@
             @endif
           </tbody>
         </table>
+        <br>
+        <a href="{{ url('/mahasiswa/' . $mahasiswa->id .'/cetak_pdf/')}}" class="btn btn-primary">Cetak KHS</a>
       </div>
       <!-- /.card-body -->
     </div>

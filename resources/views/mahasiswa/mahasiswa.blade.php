@@ -25,6 +25,7 @@
             <th>No</th>
             <th>NIM</th>
             <th>Nama</th>
+            <th>Foto</th>
             <th>Kelas</th>
             <th>Jenis Kelamin</th>
             <th>Tempat Lahir</th>
@@ -42,6 +43,7 @@
                     <td>{{++$i}}</td>
                     <td>{{$m->nim}}</td>
                     <td>{{$m->nama}}</td>
+                    <td><img src="{{ asset('storage/' . $m->foto) }}" alt="{{ $m->nama }}" width="50"></td>
                     <td>{{$m->kelas->nama_kelas}}</td>
                     <td>{{$m->jk}}</td>
                     <td>{{$m->tempat_lahir}}</td>
@@ -53,7 +55,7 @@
                         class="btn btn-sm btn-primary">Show</a>
 
                       <a href="{{url('/mahasiswa/'. $m->id.'/khs/')}}"
-                        class="btn btn-sm btn-primary">KHS</a>
+                        class="btn btn-sm btn-secondary">KHS</a>
 
                       <a href="{{url('/mahasiswa/'. $m->id.'/edit/')}}"
                       class="btn btn-sm btn-warning">Edit</a>

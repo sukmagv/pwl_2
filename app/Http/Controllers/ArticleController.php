@@ -111,7 +111,6 @@ class ArticleController extends Controller
 
     public function cetak_pdf()
     {
-        // return 'kjdhauhdkd';
         $article = ArticleModel::all();
         $pdf = PDF::loadview('article.article_pdf', ['article' => $article]);
         return $pdf->stream();
