@@ -175,7 +175,7 @@ class MahasiswaController extends Controller
 
         $mahasiswa = Mahasiswamodel::find($id);
 
-        Storage::disk('piblic')->delete($mahasiswa->foto);
+        Storage::disk('public')->delete($mahasiswa->foto);
         $mahasiswa->delete();
 
         //jika berhasil ditambah, akan kembali ke hal.awal
