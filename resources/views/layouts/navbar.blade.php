@@ -12,7 +12,7 @@
       </li>
     </ul>
 
-    <!-- Right navbar links -->
+    {{-- <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Navbar Search -->
       <li class="nav-item">
@@ -131,5 +131,5 @@
           <i class="fas fa-th-large"></i>
         </a>
       </li>
-    </ul>
-  </nav>
+    </ul> --}}
+</nav>
